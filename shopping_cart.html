@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Title Here</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark bg-gradient-custom"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Bookstore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="main.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shopping cart</a>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="h-100 h-custom">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="h5">Shopping Bag</th>
+                    <th scope="col">Format</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/static/book1.png"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">Thinking, Fast and Slow</p>
+                          <p class="mb-0">Daniel Kahneman</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500">Digital</p>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex flex-row">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="2"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500">$9.99</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/static/book1.png"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Homo Deus: A Brief History of Tomorrow
+                          </p>
+                          <p class="mb-0">Yuval Noah Harari</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Paperback</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row">
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px"
+                        />
+
+                        <button
+                          data-mdb-button-init
+                          data-mdb-ripple-init
+                          class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">$13.50</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div
+              class="card shadow-2-strong mb-5 mb-lg-0"
+              style="border-radius: 16px"
+            >
+              <div class="card-body p-4">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                    <form>
+                      <div class="d-flex flex-row pb-3">
+                        <div class="d-flex align-items-center pe-2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1v"
+                            value=""
+                            aria-label="..."
+                            checked
+                          />
+                        </div>
+                        <div class="rounded border w-100 p-3">
+                          <p class="d-flex align-items-center mb-0">
+                            <i
+                              class="fab fa-cc-mastercard fa-2x text-dark pe-2"
+                            ></i
+                            >Credit Card
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row pb-3">
+                        <div class="d-flex align-items-center pe-2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2v"
+                            value=""
+                            aria-label="..."
+                          />
+                        </div>
+                        <div class="rounded border w-100 p-3">
+                          <p class="d-flex align-items-center mb-0">
+                            <i
+                              class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"
+                            ></i
+                            >Debit Card
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row">
+                        <div class="d-flex align-items-center pe-2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3v"
+                            value=""
+                            aria-label="..."
+                          />
+                        </div>
+                        <div class="rounded border w-100 p-3">
+                          <p class="d-flex align-items-center mb-0">
+                            <i
+                              class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"
+                            ></i
+                            >PayPal
+                          </p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-6">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div
+                          data-mdb-input-init
+                          class="form-outline mb-4 mb-xl-5"
+                        >
+                          <input
+                            type="text"
+                            id="typeName"
+                            class="form-control form-control-lg"
+                            siez="17"
+                            placeholder="John Smith"
+                          />
+                          <label class="form-label" for="typeName"
+                            >Name on card</label
+                          >
+                        </div>
+
+                        <div
+                          data-mdb-input-init
+                          class="form-outline mb-4 mb-xl-5"
+                        >
+                          <input
+                            type="text"
+                            id="typeExp"
+                            class="form-control form-control-lg"
+                            placeholder="MM/YY"
+                            size="7"
+                            id="exp"
+                            minlength="7"
+                            maxlength="7"
+                          />
+                          <label class="form-label" for="typeExp"
+                            >Expiration</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div
+                          data-mdb-input-init
+                          class="form-outline mb-4 mb-xl-5"
+                        >
+                          <input
+                            type="text"
+                            id="typeText"
+                            class="form-control form-control-lg"
+                            siez="17"
+                            placeholder="1111 2222 3333 4444"
+                            minlength="19"
+                            maxlength="19"
+                          />
+                          <label class="form-label" for="typeText"
+                            >Card Number</label
+                          >
+                        </div>
+
+                        <div
+                          data-mdb-input-init
+                          class="form-outline mb-4 mb-xl-5"
+                        >
+                          <input
+                            type="password"
+                            id="typeText"
+                            class="form-control form-control-lg"
+                            placeholder="&#9679;&#9679;&#9679;"
+                            size="1"
+                            minlength="3"
+                            maxlength="3"
+                          />
+                          <label class="form-label" for="typeText">Cvv</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-xl-3">
+                    <div
+                      class="d-flex justify-content-between"
+                      style="font-weight: 500"
+                    >
+                      <p class="mb-2">Subtotal</p>
+                      <p class="mb-2">$23.49</p>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between"
+                      style="font-weight: 500"
+                    >
+                      <p class="mb-0">Shipping</p>
+                      <p class="mb-0">$2.99</p>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <div
+                      class="d-flex justify-content-between mb-4"
+                      style="font-weight: 500"
+                    >
+                      <p class="mb-2">Total (tax included)</p>
+                      <p class="mb-2">$26.48</p>
+                    </div>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary btn-block btn-lg"
+                    >
+                      <div class="d-flex justify-content-between">
+                        <span>Checkout</span>
+                        <span>$26.48</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <!-- Grid container -->
+      <div>
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                aliquam sequi voluptate quas.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Bookstore.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Title Here</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    .gradient_custom {
+      background: linear-gradient(
+        to right,
+        rgba(250, 217, 97, 0.45),
+        rgba(190, 188, 56, 0.45)
+      );
+    }
+    :root {
+      --gradient: linear-gradient(
+        to left top,
+        #dd2476 10%,
+        #ff512f 90%
+      ) !important;
+    }
+
+    body {
+      background: #111 !important;
+    }
+
+    .card {
+      background: #222;
+      border: 1px solid #dd2476;
+      color: rgba(250, 250, 250, 0.8);
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      border: 5px solid;
+      border-image-slice: 1;
+      background: var(--gradient) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      border-image-source: var(--gradient) !important;
+      text-decoration: none;
+      transition: all 0.4s ease;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background: var(--gradient) !important;
+      -webkit-background-clip: none !important;
+      -webkit-text-fill-color: #fff !important;
+      border: 5px solid #fff !important;
+      box-shadow: #222 1px 0 10px;
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: auto;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .FilterGenresList_genresList__data__WHJW5 {
+      box-sizing: border-box;
+      padding: 12px 0;
+      border-top: 2px solid #ebebeb;
+      border-bottom: 2px solid #ebebeb;
+      overflow-y: auto;
+    }
+    .GenreItem_genreItem__4bZzu {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      color: #3b393f;
+      cursor: pointer;
+      font: normal 16px / 24px ALS Sirius, Arial, Helvetica Neue, Helvetica,
+        sans-serif;
+    }
+    .GenreItem_genreItem__link__31BdP {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 4px;
+      color: #3b393f;
+    }
+    .FilterGenresList_genresList__PHxMn {
+      margin-bottom: 24px;
+      max-width: 13%;
+      margin-left: 15px;
+    }
+  </style>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark bg-gradient-custom"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Bookstore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="main.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shopping_cart.html" class="nav-link">Shopping cart</a>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="flex_container" style="display: flex">
+      <!--Поиск по тэгем -->
+      <div class="FilterGenresList_genresList__PHxMn">
+        <div class="FilterGenresList_genresList__title__2_NWv">
+          <h2>Жанры</h2>
+        </div>
+        <div class="FilterGenresList_genresList__content__PB5D_">
+          <input
+            placeholder="Название"
+            class="FilterGenresList_genresList__search__3TaWQ"
+            value="а"
+          />
+          <div class="FilterGenresList_genresList__data__WHJW5">
+            <div style="max-height: 420px">
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  боевики, остросюжетная литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  гуманитарные и общественные науки
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  естественные науки
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  историческая научная и учебная литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  классика жанра
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  классическая литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  культура и искусство
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  любовные романы
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  медицина / здравоохранение
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">политика</div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  практика психологии
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  публицистическая литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  пьесы, драматургия
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  религия и духовная литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  словари, справочники
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  современная проза
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  ужасы / мистика
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  учебная и научная литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">фантастика</div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">экономика</div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  юмористическая литература
+                </div>
+              </div>
+              <div class="GenreItem_genreItem__4bZzu">
+                <div class="GenreItem_genreItem__link__31BdP">
+                  юридическая литература
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="FilterGenresList_divider__nhaBi"></div>
+      </div>
+      <!--Конец поиска по тэгем -->
+
+      <!--Контейнер для карточек -->
+      <div class="card-container" style="margin-left: 70px">
+        <div class="container mx-auto mt-4 ml-4" style="margin-left: 40px">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    боевики, остросюжетная литература
+                  </h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Гуманитарные и общественные науки
+                  </h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i>Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    классическа литература
+                  </h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i>More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i>Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn btn-primary mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn btn-primary"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <img src="/static/book1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="book_description.html" class="btn mr-2"
+                    ><i class="fas fa-link"></i> More info</a
+                  >
+                  <a href="#" class="btn"
+                    ><i class="fab fa-github"></i> Add to Cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Конец контейнера по карточкам -->
+    </div>
+    <!--Пагинация -->
+    <nav aria-label="..." style="margin-left: 590px">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#"
+            >2 <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Конец пагинация -->
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <!-- Grid container -->
+      <div>
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                aliquam sequi voluptate quas.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Bookstore.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- End of .container -->
+
+    <script>
+      export default {
+        data() {
+          return {
+            options: [
+              "Apple",
+              "Orange",
+              "Banana",
+              "Lime",
+              "Peach",
+              "Chocolate",
+              "Strawberry",
+            ],
+            search: "",
+            value: [],
+          };
+        },
+        computed: {
+          criteria() {
+            // Compute the search criteria
+            return this.search.trim().toLowerCase();
+          },
+          availableOptions() {
+            const criteria = this.criteria;
+            // Filter out already selected options
+            const options = this.options.filter(
+              (opt) => this.value.indexOf(opt) === -1
+            );
+            if (criteria) {
+              // Show only options that match criteria
+              return options.filter(
+                (opt) => opt.toLowerCase().indexOf(criteria) > -1
+              );
+            }
+            // Show all options available
+            return options;
+          },
+          searchDesc() {
+            if (this.criteria && this.availableOptions.length === 0) {
+              return "There are no tags matching your search criteria";
+            }
+            return "";
+          },
+        },
+        methods: {
+          onOptionClick({ option, addTag }) {
+            addTag(option);
+            this.search = "";
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
